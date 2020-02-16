@@ -1,0 +1,846 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of Black MIDI Meta texts and stuffs.">
+      
+      
+        <link rel="canonical" href="https://hans5958.github.io/Black-MIDI-Meta-Docs/large-list/release-notes/">
+      
+      
+        <meta name="author" content="Hans5958">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Release Notes - Black MIDI Meta Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/dark_theme.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/codehilite.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-49890594-3", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+<meta name="theme-color" content="#212121">
+
+<link rel='icon' href='/assets/images/favicon.ico'>
+
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<link rel="manifest" href="/manifest.json">
+
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#release-notes" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://hans5958.github.io/Black-MIDI-Meta-Docs" title="Black MIDI Meta Docs" aria-label="Black MIDI Meta Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Black MIDI Meta Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Release Notes
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/Hans5958/Black-MIDI-Meta/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://hans5958.github.io/Black-MIDI-Meta-Docs" title="Black MIDI Meta Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Black MIDI Meta Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/Hans5958/Black-MIDI-Meta/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Main Page" class="md-nav__link">
+      Main Page
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../links/" title="Links" class="md-nav__link">
+      Links
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../discord/" title="Discord Servers" class="md-nav__link">
+      Discord Servers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      List of Largest MIDIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        List of Largest MIDIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Info" class="md-nav__link">
+      Info
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Release Notes
+      </label>
+    
+    <a href="./" title="Release Notes" class="md-nav__link md-nav__link--active">
+      Release Notes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#october-2019-update-26-october-2019" class="md-nav__link">
+    October 2019 Update (26 October 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#august-2019-update-12-september-2019" class="md-nav__link">
+    August 2019 Update (12 September 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#july-2019-update-30-july-2019" class="md-nav__link">
+    July 2019 Update (30 July 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#june-2019-update-28-june-2019" class="md-nav__link">
+    June 2019 Update (28 June 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#may-2019-update-30-may-2019" class="md-nav__link">
+    May 2019 Update (30 May 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-april-2019-update-26-april-2019" class="md-nav__link">
+    Second April 2019 Update (26 April 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-april-2019-update-1-april-2019" class="md-nav__link">
+    First April 2019 Update (1 April 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-march-2019-update-30-march-2019" class="md-nav__link">
+    Second March 2019 Update (30 March 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-march-2019-update-2-march-2019" class="md-nav__link">
+    First March 2019 Update (2 March 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-february-2019-update-12-february-2019" class="md-nav__link">
+    Third February 2019 Update (12 February 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-february-2019-update-7-february-2019" class="md-nav__link">
+    Second February 2019 Update (7 February 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-february-2019-update-6-february-2019" class="md-nav__link">
+    First February 2019 Update (6 February 2019)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../macros/" title="Macros" class="md-nav__link">
+      Macros
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#october-2019-update-26-october-2019" class="md-nav__link">
+    October 2019 Update (26 October 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#august-2019-update-12-september-2019" class="md-nav__link">
+    August 2019 Update (12 September 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#july-2019-update-30-july-2019" class="md-nav__link">
+    July 2019 Update (30 July 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#june-2019-update-28-june-2019" class="md-nav__link">
+    June 2019 Update (28 June 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#may-2019-update-30-may-2019" class="md-nav__link">
+    May 2019 Update (30 May 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-april-2019-update-26-april-2019" class="md-nav__link">
+    Second April 2019 Update (26 April 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-april-2019-update-1-april-2019" class="md-nav__link">
+    First April 2019 Update (1 April 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-march-2019-update-30-march-2019" class="md-nav__link">
+    Second March 2019 Update (30 March 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-march-2019-update-2-march-2019" class="md-nav__link">
+    First March 2019 Update (2 March 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#third-february-2019-update-12-february-2019" class="md-nav__link">
+    Third February 2019 Update (12 February 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#second-february-2019-update-7-february-2019" class="md-nav__link">
+    Second February 2019 Update (7 February 2019)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-february-2019-update-6-february-2019" class="md-nav__link">
+    First February 2019 Update (6 February 2019)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Hans5958/Black-MIDI-Meta/edit/master/docs/large-list/release-notes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="release-notes">Release Notes</h1>
+<h2 id="october-2019-update-26-october-2019">October 2019 Update <small>(26 October 2019)</small></h2>
+<p>Finally, after skipping a month, this update is finally done. I hope you guys don't forget about this.</p>
+<p>There are really less songs that is made over the last two months, either it is less active or I'm just being lazy and school work is a lot</p>
+<p>By the way, we've finally reached the <strong>400 songs milestone</strong>! <strong>13</strong> new songs, from <strong>391</strong> to <strong>404</strong>, here are the few.</p>
+<ul>
+<li><strong>A Shattered Heart 2.0</strong> and <strong>CyberStorm</strong> by The Romanticist</li>
+<li><strong>C418 - Sweden (Caution and Crisis Remix)</strong> by Edenathan256</li>
+<li>Some songs by Trainer Lidya or Trainer LOLXD</li>
+<li>Some lag testers and this Fornite spam MIDI for some reason.</li>
+</ul>
+<p>You may contribute by correcting mistakes, suggesting songs, etc. Thanks for reading!</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/637679298580447257">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#october-2019-update-26-october-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="august-2019-update-12-september-2019">August 2019 Update <small>(12 September 2019)</small></h2>
+<p>Here's the update. Sorry for the huge delay, the list is done weeks ago but school somehow kept me busy at these times to upload it. It's such a pain. Also, I'm focusing at other things.</p>
+<p><strong>13</strong> new songs, from <strong>378</strong> to <strong>391</strong>, some of which are...</p>
+<ul>
+<li><strong>Ouranos</strong> by HDSQ and The Romanticist</li>
+<li><strong>Ievan's Polka Infinite Star Wars</strong> and <strong>War of Sky City</strong> by Charile Yan and ooo 000.</li>
+<li>Various versions of <strong>YIAY Lag Tester</strong> by me and AwesomeGamer89</li>
+</ul>
+<p>By the way, <strong>Ievan's Polka Infinite Star Wars</strong> became is now the <strong>largest non-experimental MIDI</strong>, while <strong>Happy Theme of DEATH V10</strong> is the <strong>largest legit MIDI</strong>. The reason why is most of Ievan's Polka Infinity Star Wars notes has no note-off event. Also, the limit of the legit MIDI is estimated as 46,9 trillion notes, because each note need to have a note-on event and a note-off event.</p>
+<p>Just like last month, you may contribute by correcting mistakes, suggesting songs, etc. Thanks for reading!</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/622084047409119232">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#august-2019-update-12-september-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="july-2019-update-30-july-2019">July 2019 Update <small>(30 July 2019)</small></h2>
+<p>Another update, I actually still have a lot of pending songs but I'm afraid that I'm out of schedule, so here it is.</p>
+<p>I've added <strong>45</strong> songs, making the current count of the list is <strong>378</strong> songs from <strong>333</strong> songs. Some of the additions are...</p>
+<ul>
+<li><strong>Forgotten Cat series</strong> by Palacat</li>
+<li><strong>Moskau</strong> by Carlos S. M.</li>
+<li>Other versions of <strong>Ra Ra Rasputin</strong> by Carlos S. M.</li>
+</ul>
+<p>I've still got some songs on the pending list, such as the newly released <strong>Ouranos</strong> by HDSQ and The Romaticist and <strong>Ievan's Polka Infinite Star Wars</strong> by Charile Yan and ooo 000. These, along with others, will be added on the next update, hopefully.</p>
+<p>Just like last month, you may contribute by correcting mistakes, suggesting songs, etc. Thanks for reading!</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/605735355433615380">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#july-2019-update-30-july-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="june-2019-update-28-june-2019">June 2019 Update <small>(28 June 2019)</small></h2>
+<p><em>2 minutes before midnight...</em></p>
+<p>It's time for another update. Just like last month, it's kind of a lame update. Still, I will try to be consistent to do it monthly, in minimum.</p>
+<p>I've added <strong>21</strong> songs, making the current count of the list is <strong>333</strong> songs from <strong>312</strong> songs. Some of the additions are...</p>
+<ul>
+<li>Lots of <strong>TheDipperPinez27</strong> songs, most of them are low-quality though.</li>
+<li><strong>SmousPC</strong> by AdrianMR</li>
+<li><strong>Scarlet Zone</strong> by Carlos S. M.</li>
+<li><strong>Ra Ra Rasputin</strong> by Carlos S. M.
+...and I've changed the Happy Theme of Death links as per request.</li>
+</ul>
+<p>Finally, you may contribute by correcting mistakes, suggesting songs, etc. Speaking of the wiki page, I got admin rights and now able to push updates by myself. This is epic.</p>
+<p>Alright, thanks for reading!</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/594210095055896589">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#june-2019-update-28-june-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="may-2019-update-30-may-2019">May 2019 Update <small>(30 May 2019)</small></h2>
+<p>Hey, another update. To be fair, this is the one of the lazy updates that I ever done on this. It seems that no new MIDIs with large note counts. Maybe, it is a pretty busy month so I'm not always watching the server. Anyways, here it is.</p>
+<p>The current count of the list is <strong>312</strong> songs from <strong>301</strong> songs (<strong>11</strong> additions), <strong>133</strong> additions from the latest wiki revision (179).</p>
+<p>Here are some of the new additions.</p>
+<ul>
+<li>A new version of <strong>Funky Stars</strong> by ooo 000</li>
+<li><strong>LBSFS Andromeda Mode</strong> by LucasMIDI</li>
+<li>A bunch of <strong>Two Faced Lovers</strong> merges by PianoEclipse</li>
+<li>A bunch of *<em>Bad Apple</em> from various blackers. </li>
+</ul>
+<p>I tried to implement categories on the table. It is kind of vague so any suggestion would be appreciated. Over 212 songs have been catalogued. Some are confusing than others.</p>
+<p>You may contribute, by checking the spreadsheet or suggesting songs, and please update the wiki page, BMT. (high hopes?)</p>
+<p>Thanks for reading.</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/583588261285330954">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#may-2019-update-30-may-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="second-april-2019-update-26-april-2019">Second April 2019 Update <small>(26 April 2019)</small></h2>
+<p>Hello, it's time for another update, but <strong>we need to talk about something</strong>.</p>
+<p>On this update, there are two new 93 trillion MIDIs. Counting a new 93 trillion MIDI on the last update, that's three 93 trillion MIDIs in 2019. This might be a good sign, but also a bad sign. Yes, it is a double-edged sword. On the other side, this proves that the community proves that creating large MIDIs are a lot easier compared to the last years. But, this also proves that you can make low-quality MIDIs with ultra-inflated note quantities.</p>
+<p>One of the new MIDIs on the list, <strong>Bad Apple RTX by ooo 000 and Charlie Yan, got itself quite a controversy.</strong> The note count? 2.198.553.505.690. Yes, two trillion notes, such an unbelievable note count, kind of expected from two members that are known for their large MIDIs. The notes are actually cramped in a single and short crash point, making it impossible to pass, if you can play it in real-time. It's not like those art spam by ooo 000 or Emex or huge merges like Decimation Mode. It's just a crash point. Seriously, a lot of people got mad about it.</p>
+<p>So, what am I going to do with it, along with some of the large songs? <strong>My final decision is to keep adding those songs to the list</strong>. The reason is that I try to not do any bias on the list. If someone wants to do a large MIDI, just go ahead and put it. If I can, I will add it, as long as it is abiding by the guidelines. Yes, it is easy to make large MIDIs, as I said before. But, I think it's just unethical to do so, trying to inflate the list with some low-quality songs. It is a moral decision of someone to make large MIDIs, not me. So, I'll tell you again, I will add it to the list, okay?</p>
+<p>Of course, the people who can edit the wiki page, like Keppy or the BMT members, <strong>have a final decision on updating the list on the wiki page</strong>. It is their own right to do so, and I'm not complaining about it. They can also ask me to remove it from the list, but for now, I'll keep adding the songs. <em>Please don't hate me. Please...</em></p>
+<p>Alright, enough of that. Time for the tidbits. So, the list grew from 270 songs to <strong>301</strong> songs (<strong>31</strong> additions), <strong>122</strong> additions from the last wiki revision (179). <strong>300 songs! We did it!</strong> 🎉</p>
+<p>Here are some of the songs that I have added:</p>
+<ul>
+<li><strong>Bad Apple RTX 2080Ti</strong> (yes, that one)</li>
+<li><strong>Congratulations by PewDiePie</strong>, a video MIDI by Arduano</li>
+<li><strong>Happy Theme of DEATH V10</strong> (the last update) by AwesomeGamer89 and Arduano</li>
+<li><strong>Dogsong</strong> by Edenathan256</li>
+<li><strong>Last Resort</strong> by The Romanticist</li>
+<li><strong>Where Friendships Are Made On</strong> by The Romanticist</li>
+<li><strong>LBSFS sensory organ version</strong> by ooo 000</li>
+<li><strong>Red Zone Zenith Death Mode</strong> by TheDipperPinez27 and others</li>
+</ul>
+<p>I have fixed some errors, for sure. You may contribute, by checking the spreadsheet or suggesting songs. BMT pls update.</p>
+<p>Thank you for reading, and what a long write-up.</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/571356376715231232">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#second-april-2019-update-26-april-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="first-april-2019-update-1-april-2019">First April 2019 Update <small>(1 April 2019)</small></h2>
+<p>Hello! It's the time for another update! As I told you, this is NOT an April Fools.</p>
+<p>The list grew from 248 songs to <strong>270</strong> songs (<strong>22</strong> additions), <strong>91</strong> additions from the last wiki revision (179). 250 songs milestone reached! 🎉</p>
+<p>I have successfully included a lot of requests, along with some songs that I found on YouTube, such as...</p>
+<ul>
+<li>MOFAS series by Adrian</li>
+<li>88005553535 by Alex Petrov and Alex Vervekin</li>
+<li>Happy Birthday by WoofFace4000</li>
+<li>LBSFS Glade Spray Mode and Obliteration Mode V3 by RAPPE</li>
+<li>Two Faced Ultra Rekt lelelolol Challenge</li>
+<li>Bad Apple Synth Z+ by ooo 000</li>
+</ul>
+<p>... and more!</p>
+<p>I have fixed some errors, such as on "Ashes" by Arduano and "Happy Theme of DEATH V9" by AwesomeGamer89</p>
+<p>Again, please somebody update the list. Tell Keppy or other BMT members.</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/562139247319187456">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#first-april-2019-update-1-april-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="second-march-2019-update-30-march-2019">Second March 2019 Update <small>(30 March 2019)</small></h2>
+<p>Hey, it's the time of another update of the locked list that is outdated!</p>
+<p>The list grew from 229 songs to <strong>248</strong> songs (<strong>19</strong> additions), thats <strong>69</strong> (nice) new songs from the last wiki revision! (179)</p>
+<p>Some of the additions are "<strong>ashes</strong>" by <strong>Arduano</strong> (third song with maximum MIDI count!), "<strong>LBSFS but you're just dead</strong>" by <strong>RAPPE</strong> (27), "<strong>Happy Theme of DEATH V9</strong>" by <strong>AwesomeGamer89</strong> (9), Hakurei Zone, Bad Apple merges, and more.</p>
+<p>There's also updates related to the <strong>blacker fields for mergers</strong>. Proper credit is the purpose. I also add some <strong>colors on the note count</strong>, but it's just a nice cosmetic edits on the spreadsheet. Lastly, there are some minor updates which you can see yourself, if you want to.</p>
+<p>Oh, yeah. Please somebody update the list. Tell Keppy or maybe other wiki's sysop, maybe BMT-A.</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/561509391967322112">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#second-march-2019-update-30-march-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="first-march-2019-update-2-march-2019">First March 2019 Update <small>(2 March 2019)</small></h2>
+<p>Another revision if the large MIDI list, everyone!</p>
+<p>Lots of kumakki songs, Night of Nights, and accidentally fulfiled RAPPE requests of zones.</p>
+<p>Changelog is now compared with latest revision on the wiki.</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/561509391967322112">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#first-march-2019-update-2-march-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="third-february-2019-update-12-february-2019">Third February 2019 Update <small>(12 February 2019)</small></h2>
+<p>yall can comment, so we can get that epic victory royale</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/544877756543139841">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#third-february-2019-update-12-february-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="second-february-2019-update-7-february-2019">Second February 2019 Update <small>(7 February 2019)</small></h2>
+<p>still waiting for the edit permission, please check guys, zones still not included</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/543072576080183311">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#second-february-2019-update-7-february-2019">Click here to see the changelog.</a></p>
+</blockquote>
+<h2 id="first-february-2019-update-6-february-2019">First February 2019 Update <small>(6 February 2019)</small></h2>
+<p>planning to update large midi list with a bunch of ooo 000 midis<br />
+but kep locks the page<br />
+what should i add/remove now<br />
+coming soon addition of the ucmp, pondoffy, and some by carlos</p>
+<blockquote>
+<p><a href="https://discordapp.com/channels/139268201803546624/463557573417893888/542695116847185932">Click here to see the message on Discord.</a><br />
+<a href="../changelog/#first-february-2019-update-6-february-2019">Click here to see the changelog.</a></p>
+</blockquote>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../" title="Info" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Info
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../changelog/" title="Changelog" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Changelog
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

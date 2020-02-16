@@ -1,0 +1,670 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentation of Black MIDI Meta texts and stuffs.">
+      
+      
+        <link rel="canonical" href="https://hans5958.github.io/Black-MIDI-Meta-Docs/large-list/">
+      
+      
+        <meta name="author" content="Hans5958">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>Info - Black MIDI Meta Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#4caf50">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../stylesheets/dark_theme.css">
+    
+      <link rel="stylesheet" href="../stylesheets/codehilite.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-49890594-3", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+<meta name="theme-color" content="#212121">
+
+<link rel='icon' href='/assets/images/favicon.ico'>
+
+<meta name='apple-mobile-web-app-capable' content='yes'>
+<meta name='mobile-web-app-capable' content='yes'>
+<link rel="manifest" href="/manifest.json">
+
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="light-green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#list-of-largest-midis" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://hans5958.github.io/Black-MIDI-Meta-Docs" title="Black MIDI Meta Docs" aria-label="Black MIDI Meta Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Black MIDI Meta Docs
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Info
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/Hans5958/Black-MIDI-Meta/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://hans5958.github.io/Black-MIDI-Meta-Docs" title="Black MIDI Meta Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Black MIDI Meta Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/Hans5958/Black-MIDI-Meta/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Main Page" class="md-nav__link">
+      Main Page
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../links/" title="Links" class="md-nav__link">
+      Links
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../discord/" title="Discord Servers" class="md-nav__link">
+      Discord Servers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      List of Largest MIDIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        List of Largest MIDIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Info
+      </label>
+    
+    <a href="./" title="Info" class="md-nav__link md-nav__link--active">
+      Info
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methodology" class="md-nav__link">
+    Methodology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#author-aliases" class="md-nav__link">
+    Author Aliases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category-explanation" class="md-nav__link">
+    Category Explanation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="release-notes/" title="Release Notes" class="md-nav__link">
+      Release Notes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="changelog/" title="Changelog" class="md-nav__link">
+      Changelog
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="macros/" title="Macros" class="md-nav__link">
+      Macros
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#background" class="md-nav__link">
+    Background
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methodology" class="md-nav__link">
+    Methodology
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#author-aliases" class="md-nav__link">
+    Author Aliases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#category-explanation" class="md-nav__link">
+    Category Explanation
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/Hans5958/Black-MIDI-Meta/edit/master/docs/large-list/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="list-of-largest-midis">List of Largest MIDIs</h1>
+<p>This is a spreadsheet for the list of largest MIDIs.
+It is based on <a href="https://officialblackmidi.fandom.com/wiki/List_of_Largest_MIDIs">the wiki page</a>.</p>
+<p>Contributions are appreciated, especially the original title from the blacker, missing fields, like note intesity, size, source, etc, and finding new songs.</p>
+<p>You can view the spreadsheet in the frame below or in <a href="https://docs.google.com/spreadsheets/d/1sldrGkhU41FakmdFfUL3Z1GMT2LOQzx81yy4D_ZLxKk/edit#gid=1711202812">here</a>.</p>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTN6X5xc1UlPvn9txVz4caVTitYz4l3fS0be2yVN5Q4EEvlTqgBDEKg26UrtY_H3GESQJusXVMtnYPA/pubhtml?widget=true&amp;headers=false" width=100% height=400px></iframe>
+
+<h2 id="background">Background</h2>
+<p>There are a lot of MIDIs that are undocumented, so I tried to put it on the list.
+The list has developed from 124 songs into more than 200 songs from various blackers and creators.</p>
+<p>This spreadsheet is created because of the page protection on the said wiki page.
+Even if the page is unlocked, MediaWiki tables suck, so I'll just keep it.</p>
+<h2 id="methodology">Methodology</h2>
+<p>The methodology of adding this MIDIs is listed below.</p>
+<ol>
+<li>
+<p>The blackers/creators must be known.<br />
+<em>The methods could be, but not limited to, the MIDI is played by a person with high reputation on Black MIDI (ex. BMT), or it can be found on the first page on the YouTube search.</em></p>
+</li>
+<li>
+<p>The blacked songs must have any evidence and it's not fabricated and using the original blacker video if possible.<br />
+<em>One example of fabrication is PipiraMine's video of an April Fools MIDI that is created on Ultralight MIDI Player. Even though it is not real, the note counter is faked.
+Troll editions are mostly accepted.</em></p>
+</li>
+<li>
+<p>The title will be used is the ones that the blacker named.<br />
+<em>This to avoid any confusion by original naming of the song. It might be controversial.</em></p>
+</li>
+<li>
+<p>Note counts must be stated, even as an aproximate, and only be listed with a minimum of ten (10) million notes.</p>
+</li>
+<li>
+<p>Sizes are inserted using maximum of three (3) significant numbers.<br />
+<em>For example, 25,1 MB, 203 MB, 1,64 GB, 56,4 GB, 592 GB, etc. 20 MB, 2 GB, etc is fine.</em></p>
+</li>
+<li>
+<p>Revisions/versions/updates are valid if there it is not updated after two months or a major update.</p>
+</li>
+<li>
+<p>All merges are listed with "[merger] and others".</p>
+</li>
+<li>
+<p>The song must be in the MIDI (.mid) form.<br />
+<em>No programs, such as 93 trilion MIDI generator. It can be compressed.</em></p>
+</li>
+</ol>
+<p>Some songs are removed from the list due to the source has lost or just hidden. (look Lost Songs)</p>
+<h2 id="author-aliases">Author Aliases</h2>
+<ul>
+<li>AdrianMR is also known as Adrian M. R. and Astellar</li>
+<li>Charlie Yan is also known as Conjac Jelly Charlieyan.</li>
+<li>LucasMIDI is also known as Lucas9810</li>
+<li>Millenashea Caheret is also known as ANONE, ANONE BLACK - MIDI, Caheret, and Caheret Black MIDI.</li>
+<li>MrBurn37000vr is also known as Cameron T R</li>
+<li>Paku 15000 is also known as Elly.</li>
+<li>PianoEclipse is also known as Simba's Piano Eclipse, RainbowDash, [Black Midi] Brazil, [Black Midi] Anime, [Black Midi] Spongebob, SenkoSanMusi, SenkoSanBlackMIDI, Chino Kafuu White, and other aliases</li>
+<li>RAPPE is also known as TNT3486.</li>
+<li>Ryan 0201 is also known as umbry and RyanVideoChannel.</li>
+<li>Trainer Lydia is also known as Trainer LOLXD</li>
+<li>TrollfacepalmAcer78 is also known as Acer.</li>
+</ul>
+<h2 id="category-explanation">Category Explanation</h2>
+<ul>
+<li>
+<p>Standard<br />
+<em>Normal Black MIDIs, balanced art and audio ratio.</em></p>
+</li>
+<li>
+<p>Art Spam<br />
+<em>Black MIDIs with the art favours than the audio.</em></p>
+</li>
+<li>
+<p>Audio Spam<br />
+<em>Black MIDIs with the audio favours than the art.</em></p>
+</li>
+<li>
+<p>Standard Spam<br />
+<em>Balanced art and audio but blacked too hard.</em></p>
+</li>
+<li>
+<p>Merge<br />
+<em>Black MIDIs that are merged.</em></p>
+</li>
+<li>
+<p>Experimental<br />
+<em>An experimental MIDI with large note counts.</em></p>
+</li>
+<li>
+<p>Lag Tester<br />
+<em>Black MIDIs solely for lag testing.</em></p>
+</li>
+<li>
+<p>Medley<br />
+<em>Normal Black MIDIs with more that one song.</em></p>
+</li>
+</ul>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../discord/" title="Discord Servers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Discord Servers
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="release-notes/" title="Release Notes" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Release Notes
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
